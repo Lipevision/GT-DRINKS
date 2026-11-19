@@ -1,0 +1,127 @@
+═══════════════════════════════════════════════════════════════════
+  GT DRINKS - ATUALIZAÇÃO FINAL V4.0 - LEIA-ME
+═══════════════════════════════════════════════════════════════════
+
+✅ STATUS: CÓDIGO 100% ATUALIZADO E PRONTO
+
+═══════════════════════════════════════════════════════════════════
+  O QUE FOI FEITO
+═══════════════════════════════════════════════════════════════════
+
+1. MENU ATUALIZADO
+   - "Feedbacks" foi substituído por "Depoimentos"
+   - Nova ordem: INÍCIO | SOBRE | SERVIÇOS | GALERIA | DEPOIMENTOS | ORÇAMENTO
+
+2. HERO (PÁGINA INICIAL)
+   - Nova imagem de fundo: IMG_1319(5).jpeg (frutas cítricas e morangos)
+
+3. SEÇÃO SOBRE
+   - Nova imagem: IMG_1318(3).jpeg (drinks premium)
+
+4. GALERIA (5 FOTOS)
+   - IMG_1317(3).jpeg - Composição de frutas e utensílios
+   - IMG_1321(4).jpeg - Atendimento e experiência
+   - IMG_1315(4).jpeg - Estrutura de frutas
+   - IMG_1322(4).jpeg - Bartender preparando drinks
+   - IMG_1320(3).jpeg - Apresentação dos drinks
+
+5. NOVA SEÇÃO "DEPOIMENTOS" (3 CARDS)
+   - Vanessa: IMG_1336(1).jpeg
+   - Amanda: IMG_1335(1).jpeg
+   - Redes Sociais: IMG_1337(1).jpeg
+
+   Título: "O Que Nossos Clientes Dizem"
+   Subtítulo: "Mais do que servir drinks, criamos experiências que 
+              ficam na memória. Veja o que nossos clientes têm a dizer."
+
+═══════════════════════════════════════════════════════════════════
+  O QUE VOCÊ PRECISA FAZER AGORA
+═══════════════════════════════════════════════════════════════════
+
+📂 ADICIONAR 9 IMAGENS NA PASTA: images/
+
+Copie estes arquivos para a pasta "images":
+
+   1. IMG_1319(5).jpeg
+   2. IMG_1318(3).jpeg
+   3. IMG_1317(3).jpeg
+   4. IMG_1321(4).jpeg
+   5. IMG_1315(4).jpeg
+   6. IMG_1322(4).jpeg
+   7. IMG_1320(3).jpeg
+   8. IMG_1336(1).jpeg
+   9. IMG_1335(1).jpeg
+   10. IMG_1337(1).jpeg
+
+⚠️ IMPORTANTE:
+- Use a extensão .jpeg (NÃO .jpg)
+- Mantenha os nomes EXATAMENTE como listado (com parênteses)
+- Tamanho recomendado: mínimo 1000x1000px
+
+═══════════════════════════════════════════════════════════════════
+  COMO TESTAR O SITE
+═══════════════════════════════════════════════════════════════════
+
+1. Adicione as 9 imagens na pasta "images"
+2. Abra o arquivo "index.html" no seu navegador
+3. Verifique se todas as imagens aparecem corretamente
+4. Teste o menu "Depoimentos" 
+5. Verifique a responsividade no celular
+
+═══════════════════════════════════════════════════════════════════
+  NOVOS RECURSOS
+═══════════════════════════════════════════════════════════════════
+
+SEÇÃO DEPOIMENTOS:
+- 3 cards com imagens grandes
+- Efeito hover (elevação + borda verde neon)
+- Zoom suave nas imagens ao passar o mouse
+- Layout responsivo (3 colunas → 2 colunas → 1 coluna)
+- Design moderno e sofisticado
+
+CORES E ESTILO (MANTIDOS):
+- Preto: #000000
+- Verde Neon: #00ff88
+- Branco: #ffffff
+- Cinza: #a8a8a8
+
+═══════════════════════════════════════════════════════════════════
+  ARQUIVOS DO PROJETO
+═══════════════════════════════════════════════════════════════════
+
+PRINCIPAIS:
+- index.html ................. Estrutura do site (ATUALIZADO)
+- css/styles.css ............. Estilos visuais (ATUALIZADO)
+- js/script.js ............... Funcionalidades (sem alterações)
+
+DOCUMENTAÇÃO:
+- ATUALIZACAO_COMPLETA_V4.md ........ Detalhes completos
+- IMAGENS_NECESSARIAS_FINAL.md ...... Lista detalhada das imagens
+- LISTA_IMAGENS_PARA_ADICIONAR.txt .. Lista rápida
+
+═══════════════════════════════════════════════════════════════════
+  CONTATO GT DRINKS
+═══════════════════════════════════════════════════════════════════
+
+WhatsApp: (71) 99316-1565
+Instagram: @gt_drinks_
+Localização: Salvador - BA
+
+═══════════════════════════════════════════════════════════════════
+  COMPATIBILIDADE
+═══════════════════════════════════════════════════════════════════
+
+✅ Desktop (1920px+)
+✅ Laptop (1366px-1920px)
+✅ Tablet (768px-1024px)
+✅ Mobile (320px-767px)
+
+✅ Chrome, Firefox, Safari, Edge
+
+═══════════════════════════════════════════════════════════════════
+
+Data: 18 de novembro de 2026
+Versão: 4.0 - Atualização Final
+Desenvolvido por: Kiro AI
+
+═══════════════════════════════════════════════════════════════════

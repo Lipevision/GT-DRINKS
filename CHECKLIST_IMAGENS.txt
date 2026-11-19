@@ -1,0 +1,185 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║             GT DRINKS - CHECKLIST DE IMAGENS                       ║
+║             Marque [X] conforme adiciona cada imagem               ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════
+  HERO - IMAGEM DE FUNDO PRINCIPAL
+═══════════════════════════════════════════════════════════════════════
+
+[ ] IMG_1319(5).jpeg
+    📝 Descrição: Frutas cítricas e morangos
+    📐 Tamanho recomendado: 1920x1080px
+    📍 Onde aparece: Background da tela inicial
+    ✅ Código atualizado: SIM
+
+═══════════════════════════════════════════════════════════════════════
+  SOBRE NÓS - IMAGEM LATERAL
+═══════════════════════════════════════════════════════════════════════
+
+[ ] IMG_1318(3).jpeg
+    📝 Descrição: Drinks premium
+    📐 Tamanho recomendado: 1000x1000px
+    📍 Onde aparece: Seção "Sobre Nós" (lado direito)
+    ✅ Código atualizado: SIM
+
+═══════════════════════════════════════════════════════════════════════
+  GALERIA - 5 FOTOS (Grid de 5 colunas)
+═══════════════════════════════════════════════════════════════════════
+
+[ ] IMG_1317(3).jpeg
+    📝 Descrição: Composição de frutas e utensílios
+    📐 Tamanho recomendado: 1000x1000px
+    📍 Posição: 1ª imagem da galeria
+    ✅ Código atualizado: SIM
+
+[ ] IMG_1321(4).jpeg
+    📝 Descrição: Atendimento e experiência dos convidados
+    📐 Tamanho recomendado: 1000x1000px
+    📍 Posição: 2ª imagem da galeria
+    ✅ Código atualizado: SIM
+
+[ ] IMG_1315(4).jpeg
+    📝 Descrição: Estrutura de frutas e ingredientes
+    📐 Tamanho recomendado: 1000x1000px
+    📍 Posição: 3ª imagem da galeria
+    ✅ Código atualizado: SIM
+
+[ ] IMG_1322(4).jpeg
+    📝 Descrição: Bartender preparando drinks
+    📐 Tamanho recomendado: 1000x1000px
+    📍 Posição: 4ª imagem da galeria
+    ✅ Código atualizado: SIM
+
+[ ] IMG_1320(3).jpeg
+    📝 Descrição: Apresentação dos drinks e bebidas
+    📐 Tamanho recomendado: 1000x1000px
+    📍 Posição: 5ª imagem da galeria
+    ✅ Código atualizado: SIM
+
+═══════════════════════════════════════════════════════════════════════
+  DEPOIMENTOS - 3 CARDS (Grid de 3 colunas)
+═══════════════════════════════════════════════════════════════════════
+
+[ ] IMG_1336(1).jpeg
+    📝 Descrição: Depoimento de Vanessa
+    👤 Nome exibido: VANESSA
+    📝 Subtítulo: Cliente GT DRINKS
+    📐 Tamanho recomendado: 800x1000px (formato retrato)
+    📍 Posição: 1º card de depoimentos (esquerda)
+    ✅ Código atualizado: SIM
+
+[ ] IMG_1335(1).jpeg
+    📝 Descrição: Depoimento de Amanda
+    👤 Nome exibido: AMANDA
+    📝 Subtítulo: Cliente GT DRINKS
+    📐 Tamanho recomendado: 800x1000px (formato retrato)
+    📍 Posição: 2º card de depoimentos (centro)
+    ✅ Código atualizado: SIM
+
+[ ] IMG_1337(1).jpeg
+    📝 Descrição: Feedbacks das redes sociais
+    👤 Nome exibido: REDES SOCIAIS
+    📝 Subtítulo: Feedbacks dos Clientes
+    📐 Tamanho recomendado: 800x1000px (formato retrato)
+    📍 Posição: 3º card de depoimentos (direita)
+    ✅ Código atualizado: SIM
+
+═══════════════════════════════════════════════════════════════════════
+  RESUMO
+═══════════════════════════════════════════════════════════════════════
+
+TOTAL DE IMAGENS NECESSÁRIAS: 9
+
+Por categoria:
+[ ] 1 imagem para Hero
+[ ] 1 imagem para Sobre
+[ ] 5 imagens para Galeria
+[ ] 3 imagens para Depoimentos
+
+Progresso: [ ] / 9 imagens adicionadas
+
+═══════════════════════════════════════════════════════════════════════
+  VERIFICAÇÃO FINAL
+═══════════════════════════════════════════════════════════════════════
+
+Após adicionar todas as imagens, marque:
+
+[ ] Todas as 9 imagens estão na pasta: images/
+[ ] Nomes dos arquivos estão EXATAMENTE corretos
+[ ] Extensão é .jpeg (minúsculo)
+[ ] Abri o index.html no navegador
+[ ] Hero exibe a imagem de fundo
+[ ] Seção Sobre exibe a imagem lateral
+[ ] Galeria mostra as 5 fotos
+[ ] Depoimentos mostra os 3 cards com imagens
+[ ] Nenhuma imagem aparece "quebrada" 🖼️❌
+[ ] Site está responsivo no celular
+[ ] Testei os links do menu
+[ ] Testei o botão flutuante do WhatsApp
+
+═══════════════════════════════════════════════════════════════════════
+  OTIMIZAÇÃO (OPCIONAL)
+═══════════════════════════════════════════════════════════════════════
+
+Para melhorar a performance:
+
+[ ] Comprimi as imagens (tinypng.com)
+[ ] Verifiquei que nenhuma imagem excede 2MB
+[ ] Testei a velocidade de carregamento
+[ ] Site abre em menos de 3 segundos
+
+═══════════════════════════════════════════════════════════════════════
+  BACKUP E DEPLOY
+═══════════════════════════════════════════════════════════════════════
+
+Antes de publicar:
+
+[ ] Fiz backup de todo o projeto
+[ ] Testei em diferentes navegadores (Chrome, Firefox, Safari, Edge)
+[ ] Testei em diferentes dispositivos (Desktop, Tablet, Mobile)
+[ ] Revisei todos os textos e links
+[ ] Confirmei contatos: WhatsApp e Instagram
+
+Publicação:
+
+[ ] Fiz commit no Git (se aplicável)
+[ ] Fiz push para o repositório
+[ ] Deploy no GitHub Pages ou servidor
+[ ] Testei o site online
+[ ] Compartilhei o link com o cliente
+
+═══════════════════════════════════════════════════════════════════════
+  SUPORTE
+═══════════════════════════════════════════════════════════════════════
+
+Documentos de ajuda disponíveis:
+
+✓ COMO_ADICIONAR_IMAGENS.txt ........ Guia passo a passo detalhado
+✓ LISTA_IMAGENS_PARA_ADICIONAR.txt .. Lista rápida das 9 imagens
+✓ LEIA-ME_ATUALIZACAO_FINAL.txt ..... Instruções gerais
+✓ IMAGENS_NECESSARIAS_FINAL.md ...... Documentação completa
+✓ ANTES_E_DEPOIS.txt ................ Comparativo das mudanças
+✓ ESTRUTURA_SITE_FINAL.txt .......... Mapa visual do site
+✓ ATUALIZACAO_COMPLETA_V4.md ........ Detalhes técnicos
+
+═══════════════════════════════════════════════════════════════════════
+  CONTATOS GT DRINKS
+═══════════════════════════════════════════════════════════════════════
+
+WhatsApp: (71) 99316-1565
+Instagram: @gt_drinks_
+Localização: Salvador - BA
+
+═══════════════════════════════════════════════════════════════════════
+
+✅ LEMBRE-SE: O código já está 100% pronto!
+   Você só precisa adicionar as 9 imagens físicas na pasta images/
+
+═══════════════════════════════════════════════════════════════════════
+
+Data: 18 de novembro de 2026
+Versão: 4.0
+Desenvolvido por: Kiro AI
+
+═══════════════════════════════════════════════════════════════════════

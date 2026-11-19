@@ -1,0 +1,33 @@
+=====================================================
+GT DRINKS - LISTA DE IMAGENS PARA ADICIONAR
+=====================================================
+
+Adicione estas 9 imagens na pasta: images/
+
+HERO (1 imagem):
+1. IMG_1319(5).jpeg - Background principal com frutas cítricas e morangos
+
+SOBRE (1 imagem):
+2. IMG_1318(3).jpeg - Drinks premium
+
+GALERIA (5 imagens):
+3. IMG_1317(3).jpeg - Composição de frutas e utensílios
+4. IMG_1321(4).jpeg - Atendimento e experiência
+5. IMG_1315(4).jpeg - Estrutura de frutas e ingredientes
+6. IMG_1322(4).jpeg - Bartender preparando drinks
+7. IMG_1320(3).jpeg - Apresentação dos drinks
+
+DEPOIMENTOS (3 imagens):
+8. IMG_1336(1).jpeg - Depoimento de Vanessa
+9. IMG_1335(1).jpeg - Depoimento de Amanda
+10. IMG_1337(1).jpeg - Feedbacks das redes sociais
+
+IMPORTANTE:
+- Use a extensão .jpeg (NÃO .jpg)
+- Mantenha os nomes EXATAMENTE como listado (com parênteses)
+- Tamanho recomendado: mínimo 1000x1000px
+
+CAMINHO COMPLETO:
+c:\Users\ERICK CARTMAN\Desktop\GT DRINKS\images\
+
+=====================================================

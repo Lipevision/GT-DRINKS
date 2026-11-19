@@ -1,0 +1,237 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║         GUIA PASSO A PASSO: COMO ADICIONAR AS IMAGENS             ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Este guia explica como adicionar as 9 imagens necessárias para que o
+site GT DRINKS funcione completamente.
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 1: LOCALIZAR A PASTA DE DESTINO
+═══════════════════════════════════════════════════════════════════════
+
+Navegue até a pasta do projeto:
+
+Windows:
+📂 c:\Users\ERICK CARTMAN\Desktop\GT DRINKS\images\
+
+Mac/Linux:
+📂 ~/Desktop/GT DRINKS/images/
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 2: PREPARAR AS IMAGENS
+═══════════════════════════════════════════════════════════════════════
+
+Você precisa de 9 imagens com estes nomes EXATOS:
+
+✓ IMG_1319(5).jpeg
+✓ IMG_1318(3).jpeg
+✓ IMG_1317(3).jpeg
+✓ IMG_1321(4).jpeg
+✓ IMG_1315(4).jpeg
+✓ IMG_1322(4).jpeg
+✓ IMG_1320(3).jpeg
+✓ IMG_1336(1).jpeg
+✓ IMG_1335(1).jpeg
+✓ IMG_1337(1).jpeg
+
+⚠️ IMPORTANTE:
+- Use .jpeg (NÃO .jpg, NÃO .JPG, NÃO .JPEG)
+- Mantenha os parênteses: (1), (3), (4), (5)
+- Respeite maiúsculas: IMG não img
+- Não adicione espaços
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 3: VERIFICAR OS ARQUIVOS ORIGINAIS
+═══════════════════════════════════════════════════════════════════════
+
+Você provavelmente tem as imagens com nomes parecidos.
+Você precisa RENOMEAR ou COPIAR com o nome exato.
+
+EXEMPLOS DE CONVERSÃO:
+
+Se você tem:              Renomeie para:
+────────────────────      ──────────────────
+IMG_1319.jpg        →     IMG_1319(5).jpeg
+IMG_1319(5).jpg     →     IMG_1319(5).jpeg
+IMG_1318.jpeg       →     IMG_1318(3).jpeg
+IMG1317.jpg         →     IMG_1317(3).jpeg
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 4: CONVERTER EXTENSÃO (SE NECESSÁRIO)
+═══════════════════════════════════════════════════════════════════════
+
+WINDOWS:
+1. Clique com botão direito na imagem
+2. Abrir com → Paint ou Fotos
+3. Arquivo → Salvar Como
+4. Em "Tipo", escolha: JPEG
+5. Digite o nome exato: IMG_1319(5).jpeg
+6. Clique em "Salvar"
+
+MAC:
+1. Abra a imagem com Preview
+2. File → Export
+3. Format: JPEG
+4. Name: IMG_1319(5).jpeg
+5. Click "Save"
+
+LINUX:
+Use o comando:
+convert original.jpg IMG_1319(5).jpeg
+
+ONLINE (qualquer sistema):
+- Use sites como: cloudconvert.com, convertio.co
+- Upload da imagem
+- Escolha formato JPEG
+- Download com nome correto
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 5: COPIAR AS IMAGENS PARA A PASTA
+═══════════════════════════════════════════════════════════════════════
+
+WINDOWS:
+1. Selecione as 9 imagens renomeadas
+2. Ctrl + C (copiar)
+3. Abra a pasta: GT DRINKS\images
+4. Ctrl + V (colar)
+
+MAC:
+1. Selecione as 9 imagens
+2. Cmd + C
+3. Abra a pasta images
+4. Cmd + V
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 6: VERIFICAR SE ESTÁ TUDO CERTO
+═══════════════════════════════════════════════════════════════════════
+
+Abra a pasta images e verifique se você tem:
+
+✓ IMG_1319(5).jpeg
+✓ IMG_1318(3).jpeg
+✓ IMG_1317(3).jpeg
+✓ IMG_1321(4).jpeg
+✓ IMG_1315(4).jpeg
+✓ IMG_1322(4).jpeg
+✓ IMG_1320(3).jpeg
+✓ IMG_1336(1).jpeg
+✓ IMG_1335(1).jpeg
+✓ IMG_1337(1).jpeg
+
+Verifique também:
+□ Extensão é .jpeg (minúsculo)
+□ Nome começa com IMG_ (maiúsculo)
+□ Tem os números entre parênteses
+□ Não tem espaços no nome
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 7: TESTAR O SITE
+═══════════════════════════════════════════════════════════════════════
+
+1. Abra a pasta principal: GT DRINKS
+2. Localize o arquivo: index.html
+3. Clique duas vezes nele (ou clique com botão direito → Abrir com)
+4. Escolha seu navegador (Chrome, Firefox, Edge, Safari)
+5. O site deve abrir mostrando todas as imagens
+
+═══════════════════════════════════════════════════════════════════════
+  PASSO 8: VERIFICAR CADA SEÇÃO
+═══════════════════════════════════════════════════════════════════════
+
+Verifique se as imagens aparecem em:
+
+□ HERO (tela inicial) - Background com frutas
+□ SOBRE (seção Sobre Nós) - Imagem lateral de drinks
+□ GALERIA (5 fotos) - Todas as 5 imagens visíveis
+□ DEPOIMENTOS (3 cards) - Vanessa, Amanda e Redes Sociais
+
+═══════════════════════════════════════════════════════════════════════
+  PROBLEMAS COMUNS E SOLUÇÕES
+═══════════════════════════════════════════════════════════════════════
+
+PROBLEMA: Imagem não aparece (ícone quebrado 🖼️❌)
+SOLUÇÃO: Verifique o nome exato do arquivo
+
+PROBLEMA: Imagem aparece distorcida
+SOLUÇÃO: Tamanho muito pequeno - use imagens maiores (mín. 1000px)
+
+PROBLEMA: Imagem aparece cortada
+SOLUÇÃO: Normal - o CSS faz crop automático para fit
+
+PROBLEMA: Site lento para carregar
+SOLUÇÃO: Comprima as imagens (use tinypng.com ou compressor.io)
+
+PROBLEMA: Extensão .jpg mas site pede .jpeg
+SOLUÇÃO: Renomeie manualmente ou converta
+
+═══════════════════════════════════════════════════════════════════════
+  TAMANHOS RECOMENDADOS
+═══════════════════════════════════════════════════════════════════════
+
+HERO (IMG_1319(5).jpeg):
+- Ideal: 1920x1080px ou maior
+- Mínimo: 1366x768px
+- Formato: Paisagem (horizontal)
+
+SOBRE (IMG_1318(3).jpeg):
+- Ideal: 1000x1000px ou maior
+- Mínimo: 800x800px
+- Formato: Quadrado
+
+GALERIA (5 imagens):
+- Ideal: 1200x1200px
+- Mínimo: 800x800px
+- Formato: Quadrado ou retrato
+
+DEPOIMENTOS (3 imagens):
+- Ideal: 800x1000px
+- Mínimo: 600x800px
+- Formato: Retrato (vertical) funciona bem
+
+═══════════════════════════════════════════════════════════════════════
+  COMPRESSÃO DE IMAGENS (OPCIONAL MAS RECOMENDADO)
+═══════════════════════════════════════════════════════════════════════
+
+Para melhorar a velocidade do site, comprima as imagens:
+
+ONLINE (grátis):
+• tinypng.com - Comprime até 70% sem perda visível
+• compressor.io - Compressão inteligente
+• squoosh.app - Ferramenta do Google
+
+DESKTOP:
+• Windows: Paint 3D, IrfanView
+• Mac: Preview, ImageOptim
+• Linux: GIMP
+
+═══════════════════════════════════════════════════════════════════════
+  PRÓXIMOS PASSOS APÓS ADICIONAR AS IMAGENS
+═══════════════════════════════════════════════════════════════════════
+
+1. ✓ Adicionar as 9 imagens
+2. ✓ Testar o site localmente (index.html)
+3. □ Fazer backup do projeto
+4. □ Fazer commit no Git (se usar)
+5. □ Fazer deploy para GitHub Pages ou servidor
+6. □ Testar no celular/tablet
+7. □ Compartilhar o link com clientes
+
+═══════════════════════════════════════════════════════════════════════
+  PRECISA DE AJUDA?
+═══════════════════════════════════════════════════════════════════════
+
+Se tiver problemas:
+
+1. Releia este guia do início
+2. Verifique os nomes dos arquivos letra por letra
+3. Certifique-se de que está na pasta correta
+4. Tente abrir uma imagem no navegador diretamente:
+   images/IMG_1319(5).jpeg
+
+═══════════════════════════════════════════════════════════════════════
+
+Data: 18 de novembro de 2026
+Versão do Guia: 1.0
+Desenvolvido por: Kiro AI
+
+═══════════════════════════════════════════════════════════════════════

@@ -1,0 +1,164 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║            GT DRINKS - COMPARATIVO ANTES E DEPOIS                  ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════
+  1. MENU DE NAVEGAÇÃO
+═══════════════════════════════════════════════════════════════════════
+
+ANTES: INÍCIO | SOBRE | SERVIÇOS | GALERIA | FEEDBACKS | ORÇAMENTO
+
+DEPOIS: INÍCIO | SOBRE | SERVIÇOS | GALERIA | DEPOIMENTOS | ORÇAMENTO
+                                              ^^^^^^^^^^^
+                                              (ALTERADO)
+
+═══════════════════════════════════════════════════════════════════════
+  2. HERO - IMAGEM DE FUNDO
+═══════════════════════════════════════════════════════════════════════
+
+ANTES: IMG_1319(2).jpeg
+
+DEPOIS: IMG_1319(5).jpeg ← Frutas cítricas e morangos
+        ^^^^^^^^^^^^^
+
+═══════════════════════════════════════════════════════════════════════
+  3. SEÇÃO SOBRE NÓS
+═══════════════════════════════════════════════════════════════════════
+
+ANTES: IMG_1315(2).jpeg
+
+DEPOIS: IMG_1318(3).jpeg ← Drinks premium
+        ^^^^^^^^^^^^^
+
+OBSERVAÇÃO: Indicadores numéricos já foram removidos anteriormente
+            (500+ eventos, 50+ drinks, 100% satisfação)
+
+═══════════════════════════════════════════════════════════════════════
+  4. GALERIA
+═══════════════════════════════════════════════════════════════════════
+
+┌─────────────────┬────────────────────┬────────────────────────────┐
+│  POSIÇÃO        │  ANTES             │  DEPOIS                    │
+├─────────────────┼────────────────────┼────────────────────────────┤
+│  1ª imagem      │  IMG_1316(2).jpeg  │  IMG_1317(3).jpeg         │
+│  2ª imagem      │  IMG_1321(2).jpeg  │  IMG_1321(4).jpeg         │
+│  3ª imagem      │  IMG_1320(1).jpeg  │  IMG_1315(4).jpeg         │
+│  4ª imagem      │  IMG_1317(2).jpeg  │  IMG_1322(4).jpeg ← NOVA  │
+│  5ª imagem      │  IMG_1318(2).jpeg  │  IMG_1320(3).jpeg         │
+└─────────────────┴────────────────────┴────────────────────────────┘
+
+TOTAL: 5 imagens (mantido) | TODAS atualizadas com novos arquivos
+
+═══════════════════════════════════════════════════════════════════════
+  5. SEÇÃO FEEDBACKS → DEPOIMENTOS
+═══════════════════════════════════════════════════════════════════════
+
+ANTES (Seção "Feedbacks"):
+┌──────────────────────────────────────────────────────────────────┐
+│                    💬                                             │
+│           Em Breve, Novos Depoimentos                            │
+│                                                                   │
+│  "Estamos coletando avaliações autênticas de nossos clientes..." │
+└──────────────────────────────────────────────────────────────────┘
+
+DEPOIS (Seção "Depoimentos"):
+┌──────────────────────────────────────────────────────────────────┐
+│          O QUE NOSSOS CLIENTES DIZEM                             │
+│  "Mais do que servir drinks, criamos experiências que ficam..."  │
+│                                                                   │
+│  ┌────────────┐    ┌────────────┐    ┌────────────┐            │
+│  │ [IMAGEM]   │    │ [IMAGEM]   │    │ [IMAGEM]   │            │
+│  │IMG_1336(1) │    │IMG_1335(1) │    │IMG_1337(1) │            │
+│  │  .jpeg     │    │  .jpeg     │    │  .jpeg     │            │
+│  ├────────────┤    ├────────────┤    ├────────────┤            │
+│  │  VANESSA   │    │   AMANDA   │    │   REDES    │            │
+│  │Cliente GT  │    │ Cliente GT │    │  SOCIAIS   │            │
+│  └────────────┘    └────────────┘    └────────────┘            │
+└──────────────────────────────────────────────────────────────────┘
+
+MUDANÇAS:
+✓ ID da seção: "feedbacks" → "depoimentos"
+✓ Layout: Mensagem de "em breve" → 3 cards com imagens
+✓ Conteúdo: Template genérico → Imagens reais de depoimentos
+✓ Título atualizado com nova mensagem
+✓ Subtítulo mais focado em experiências
+
+═══════════════════════════════════════════════════════════════════════
+  6. FOOTER - LINKS
+═══════════════════════════════════════════════════════════════════════
+
+ANTES:
+Links Rápidos:
+- Sobre Nós
+- Serviços
+- Galeria
+- Feedbacks  ← 
+- Instagram
+
+DEPOIS:
+Links Rápidos:
+- Sobre Nós
+- Serviços
+- Galeria
+- Depoimentos ← ALTERADO
+- Instagram
+
+═══════════════════════════════════════════════════════════════════════
+  RESUMO DAS ALTERAÇÕES
+═══════════════════════════════════════════════════════════════════════
+
+TEXTOS/NAVEGAÇÃO:
+✓ 3 ocorrências de "Feedbacks" → "Depoimentos"
+  • Menu principal
+  • Footer - Links Rápidos
+  • ID da seção (#feedbacks → #depoimentos)
+
+IMAGENS:
+✓ 1 imagem do Hero atualizada
+✓ 1 imagem da seção Sobre atualizada
+✓ 5 imagens da Galeria atualizadas
+✓ 3 imagens novas na seção Depoimentos
+
+TOTAL: 10 REFERÊNCIAS DE IMAGENS ATUALIZADAS
+       (mas apenas 9 arquivos únicos, pois galeria tem 5 fotos)
+
+CSS:
+✓ Novos estilos para .depoimentos-section
+✓ Novos estilos para .depoimentos-grid
+✓ Novos estilos para .depoimento-card
+✓ Novos estilos para .depoimento-image
+✓ Novos estilos para .testimonial-photo
+✓ Estilos responsivos para tablets e mobile
+
+═══════════════════════════════════════════════════════════════════════
+  COMPATIBILIDADE MANTIDA
+═══════════════════════════════════════════════════════════════════════
+
+✓ Todas as funcionalidades anteriores mantidas
+✓ Design e identidade visual preservados
+✓ Responsividade em todos os dispositivos
+✓ Navegação fluida entre seções
+✓ Botão flutuante WhatsApp mantido
+✓ Links de contato atualizados
+✓ Integração com Instagram preservada
+
+═══════════════════════════════════════════════════════════════════════
+  MELHORIAS IMPLEMENTADAS
+═══════════════════════════════════════════════════════════════════════
+
+✓ Seção de depoimentos mais visual e impactante
+✓ Cards interativos com hover effects
+✓ Imagens grandes para melhor visualização
+✓ Layout responsivo otimizado para mobile
+✓ Zoom suave nas imagens ao hover
+✓ Borda neon nos cards ao hover
+✓ Nomes destacados em verde neon
+
+═══════════════════════════════════════════════════════════════════════
+
+Data: 18 de novembro de 2026
+Versão Anterior: 3.0
+Versão Atual: 4.0 - Atualização Final
+Desenvolvido por: Kiro AI
+
+═══════════════════════════════════════════════════════════════════════
