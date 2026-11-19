@@ -1588,3 +1588,170 @@ section {
         height: 300px;
     }
 }
+
+
+/* ===================================
+   MELHORIAS MOBILE - GT DRINKS
+   =================================== */
+
+/* Otimização de imagens para mobile */
+@media (max-width: 768px) {
+    .hero-image-bg {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll; /* Melhor performance em mobile */
+    }
+    
+    .about-photo,
+    .founder-photo,
+    .gallery-image,
+    .testimonial-photo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Ajustes para galeria em mobile */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+    
+    /* Depoimentos em mobile */
+    .depoimentos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .depoimento-image {
+        height: 300px;
+    }
+    
+    /* Menu mobile mais acessível */
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+    
+    /* Botões maiores para touch */
+    .btn {
+        padding: 18px 30px;
+        font-size: 1rem;
+        min-height: 48px; /* Acessibilidade touch */
+    }
+    
+    /* Container com mais padding em mobile */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Seções com menos padding vertical */
+    section {
+        padding: 50px 0;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle-inline {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item {
+        height: 250px;
+    }
+    
+    .btn {
+        padding: 15px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Melhorias para desktop grande */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .gallery-item {
+        height: 400px;
+    }
+}
+
+/* Prevenir rolagem horizontal */
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+* {
+    max-width: 100%;
+}
+
+/* Performance: lazy loading visual feedback */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Garantir que imagens não quebrem o layout */
+.about-photo,
+.founder-photo,
+.gallery-image,
+.testimonial-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Hero com melhor suporte para diferentes formatos de imagem */
+.hero-image-bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    will-change: transform; /* Otimização de performance */
+}
+
+/* Garantir visibilidade de todos os elementos em mobile */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        z-index: 1000;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    /* Evitar que o menu mobile cubra conteúdo */
+    .nav-menu {
+        z-index: 999;
+    }
+    
+    #header {
+        z-index: 1000;
+    }
+}

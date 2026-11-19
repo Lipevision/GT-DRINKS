@@ -1,0 +1,173 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║         ⚠️ AÇÃO OBRIGATÓRIA: CONVERTER IMAGENS HEIC ⚠️           ║
+║                                                                    ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+❌ PROBLEMA IDENTIFICADO:
+
+As 7 imagens principais do site estão no formato .HEIC (formato da Apple)
+que NÃO É SUPORTADO por navegadores web!
+
+Por isso as imagens aparecem "quebradas" no site.
+
+═══════════════════════════════════════════════════════════════════════
+  📋 IMAGENS QUE PRECISAM SER CONVERTIDAS
+═══════════════════════════════════════════════════════════════════════
+
+Pasta: images/
+
+1. IMG_2764.HEIC → IMG_2764.jpg  (Para: Hero/Página Inicial)
+2. IMG_2766.HEIC → IMG_2766.jpg  (Para: Seção Sobre)
+3. IMG_2768.HEIC → IMG_2768.jpg  (Para: Galeria 1)
+4. IMG_2770.HEIC → IMG_2770.jpg  (Para: Galeria 2)
+5. IMG_2903.HEIC → IMG_2903.jpg  (Para: Galeria 3)
+6. IMG_2980.HEIC → IMG_2980.jpg  (Para: Galeria 4)
+7. IMG_3015.HEIC → IMG_3015.jpg  (Para: Galeria 5)
+
+⚠️ O HTML já foi atualizado para usar os nomes .jpg
+⚠️ Você SÓ precisa converter os arquivos!
+
+═══════════════════════════════════════════════════════════════════════
+  🛠️ MÉTODO 1: WINDOWS 11/10 (FOTOS)
+═══════════════════════════════════════════════════════════════════════
+
+Passo a passo para cada arquivo:
+
+1. Vá para a pasta: GT DRINKS\images\
+2. Clique com botão DIREITO no arquivo .HEIC
+3. Selecione "Abrir com" → "Fotos"
+4. Na parte superior, clique nos 3 pontinhos (...)
+5. Selecione "Salvar como"
+6. Em "Tipo", escolha "JPEG"
+7. Salve com o MESMO NOME, trocando .HEIC por .jpg
+   Exemplo: IMG_2764.HEIC vira IMG_2764.jpg
+8. Repita para os 7 arquivos
+
+═══════════════════════════════════════════════════════════════════════
+  🛠️ MÉTODO 2: CONVERSOR ONLINE (MAIS RÁPIDO)
+═══════════════════════════════════════════════════════════════════════
+
+OPÇÃO A - Convertio (Recomendado):
+1. Acesse: https://convertio.co/pt/heic-jpg/
+2. Clique em "Escolher arquivos"
+3. Selecione os 7 arquivos .HEIC de uma vez
+4. Clique no botão vermelho "CONVERTER"
+5. Aguarde a conversão (leva 1-2 minutos)
+6. Clique em "Baixar" (vai baixar um .zip)
+7. Extraia o .zip
+8. Copie os 7 arquivos .jpg para GT DRINKS\images\
+9. Substitua ou mantenha junto com os .HEIC
+
+OPÇÃO B - CloudConvert:
+1. Acesse: https://cloudconvert.com/heic-to-jpg
+2. Arraste os 7 arquivos .HEIC para a janela
+3. Clique em "Start Conversion"
+4. Baixe os arquivos convertidos
+5. Coloque na pasta images/
+
+OPÇÃO C - HEICtoJPEG (Ferramenta dedicada):
+1. Acesse: https://heictojpeg.com/
+2. Arraste os 7 arquivos
+3. Aguarde conversão automática
+4. Baixe os arquivos .jpg
+
+═══════════════════════════════════════════════════════════════════════
+  🛠️ MÉTODO 3: PAINT (WINDOWS)
+═══════════════════════════════════════════════════════════════════════
+
+1. Clique com botão DIREITO no arquivo .HEIC
+2. Selecione "Abrir com" → "Paint"
+3. Clique em "Arquivo" → "Salvar como" → "Imagem JPEG"
+4. Salve com nome IMG_2764.jpg (sem o .HEIC)
+5. Repita para cada arquivo
+
+═══════════════════════════════════════════════════════════════════════
+  🛠️ MÉTODO 4: SCRIPT AUTOMATIZADO
+═══════════════════════════════════════════════════════════════════════
+
+Na pasta images/ há um script PowerShell:
+📄 converter-heic-para-jpg.ps1
+
+Para executar:
+1. Clique com botão DIREITO no arquivo
+2. Selecione "Executar com PowerShell"
+3. Siga as instruções na tela
+
+Nota: Este script mostra instruções, não converte automaticamente
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ VERIFICAÇÃO APÓS CONVERSÃO
+═══════════════════════════════════════════════════════════════════════
+
+1. Abra a pasta images/
+2. Verifique se existem estes arquivos:
+
+   ✓ IMG_2764.jpg
+   ✓ IMG_2766.jpg
+   ✓ IMG_2768.jpg
+   ✓ IMG_2770.jpg
+   ✓ IMG_2903.jpg
+   ✓ IMG_2980.jpg
+   ✓ IMG_3015.jpg
+
+3. Abra o arquivo index.html no navegador
+4. Todas as imagens devem aparecer corretamente!
+
+═══════════════════════════════════════════════════════════════════════
+  📊 STATUS ATUAL DO SITE
+═══════════════════════════════════════════════════════════════════════
+
+✅ HTML corrigido e atualizado
+✅ CSS otimizado para desktop e mobile
+✅ Caminhos de imagens corretos
+✅ Responsividade implementada
+✅ Imagens dos depoimentos funcionando (já são .jpg)
+✅ Imagem do fundador funcionando (já é .jpg)
+
+⚠️ PENDENTE: Converter 7 imagens HEIC para JPG
+
+PROGRESSO: 90% completo
+
+═══════════════════════════════════════════════════════════════════════
+  ❓ PERGUNTAS FREQUENTES
+═══════════════════════════════════════════════════════════════════════
+
+P: Posso deixar os arquivos .HEIC na pasta?
+R: Sim, não há problema. Mas os navegadores vão usar os .jpg
+
+P: Por que HEIC não funciona?
+R: HEIC é um formato da Apple não suportado por Chrome, Firefox, Edge
+
+P: A qualidade vai piorar?
+R: Não significativamente. JPG com qualidade 90% é excelente
+
+P: Posso usar PNG em vez de JPG?
+R: Sim, mas o arquivo será muito maior. JPG é melhor para fotos
+
+P: E se eu não conseguir converter?
+R: Use o método online (Convertio), é o mais fácil e rápido
+
+═══════════════════════════════════════════════════════════════════════
+  🎯 PRÓXIMOS PASSOS
+═══════════════════════════════════════════════════════════════════════
+
+1. ⚠️ Converter as 7 imagens HEIC para JPG
+2. ✅ Abrir index.html no navegador
+3. ✅ Verificar se todas as imagens aparecem
+4. ✅ Testar no celular
+5. ✅ Fazer deploy do site
+
+═══════════════════════════════════════════════════════════════════════
+
+⏱️ TEMPO ESTIMADO: 5-10 minutos (método online)
+
+🔗 Link rápido: https://convertio.co/pt/heic-jpg/
+
+═══════════════════════════════════════════════════════════════════════
+
+Data: 18 de novembro de 2026
+GT DRINKS - Correção de Imagens
+Desenvolvido por: Kiro AI
+
+═══════════════════════════════════════════════════════════════════════
