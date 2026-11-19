@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens - GT DRINKS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #00ff88;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #00ff88;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 10px;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .image-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .image-name {
+            font-size: 12px;
+            color: #aaa;
+            word-break: break-all;
+            margin-bottom: 5px;
+        }
+        
+        .image-status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .status-ok {
+            background: #28a745;
+            color: white;
+        }
+        
+        .status-error {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .hero-test {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .hero-test::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        
+        .hero-test-text {
+            position: relative;
+            z-index: 1;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+        
+        .summary {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 10px;
+            background: #1a1a1a;
+            border-radius: 5px;
+        }
+        
+        .summary-label {
+            color: #aaa;
+        }
+        
+        .summary-value {
+            color: #00ff88;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 TESTE DE IMAGENS - GT DRINKS</h1>
+    
+    <div class="summary">
+        <h2>📊 Resumo</h2>
+        <div class="summary-item">
+            <span class="summary-label">Total de Imagens:</span>
+            <span class="summary-value" id="total-images">0</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Imagens OK:</span>
+            <span class="summary-value" id="ok-images">0</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Imagens Quebradas:</span>
+            <span class="summary-value" style="color: #dc3545;" id="broken-images">0</span>
+        </div>
+        <div class="summary-item">
+            <span class="summary-label">Taxa de Sucesso:</span>
+            <span class="summary-value" id="success-rate">0%</span>
+        </div>
+    </div>
+    
+    <h2>🏠 HERO - Imagem de Fundo</h2>
+    <div class="hero-test" id="hero-test" style="background-image: url('images/IMG_2980-_1_.jpg');">
+        <div class="hero-test-text">IMG_2980-_1_.jpg</div>
+    </div>
+    <div class="image-card" style="margin-bottom: 40px;">
+        <p class="image-name">images/IMG_2980-_1_.jpg</p>
+        <div class="image-status" id="hero-status">Verificando...</div>
+    </div>
+    
+    <h2>ℹ️ QUEM SOMOS - Imagem Principal</h2>
+    <div class="image-grid" style="max-width: 300px;">
+        <div class="image-card">
+            <img src="images/IMG_2903-_1_.jpg" alt="Quem Somos" id="about-image">
+            <p class="image-name">IMG_2903-_1_.jpg</p>
+            <div class="image-status" id="about-status">Verificando...</div>
+        </div>
+    </div>
+    
+    <h2>🖼️ GALERIA - Portfólio (9 Imagens Prontas)</h2>
+    <div class="image-grid" id="gallery-grid"></div>
+    
+    <h2>💬 DEPOIMENTOS</h2>
+    <div class="image-grid" id="testimonials-grid"></div>
+    
+    <h2>⚠️ ARQUIVOS HEIC RESTANTES (Não Convertidos)</h2>
+    <div id="heic-list" style="background: #2a2a2a; padding: 20px; border-radius: 10px; margin-top: 20px;">
+        <p style="color: #ffc107; margin-bottom: 10px;">Os seguintes arquivos ainda estão em formato HEIC e NÃO aparecem no site:</p>
+        <ul style="color: #aaa; line-height: 1.8;">
+            <li>IMG_2770.HEIC</li>
+            <li>IMG_2926.HEIC</li>
+            <li>IMG_2947.HEIC</li>
+            <li>IMG_3015.HEIC</li>
+            <li>IMG_3449.HEIC</li>
+            <li>IMG_3450.HEIC</li>
+            <li>IMG_3452.HEIC</li>
+        </ul>
+        <p style="color: #00ff88; margin-top: 15px;">✅ Para converter: Execute CONVERTER-HEIC-RESTANTES.ps1</p>
+    </div>
+    
+    <script>
+        // Lista de imagens da galeria (prontas para uso)
+        const galleryImages = [
+            '20E5024D-3552-47B7-965B-F8B46B47AE09.png',
+            '8EC383ED-BA87-41C2-B6D2-5BD9ED8651C1.png',
+            '9C1BE445-56CE-468F-B515-8AE229578067.jpg',
+            'fundador-thiago.jpg',
+            'IMG_1088.JPG',
+            'IMG_2764.jpg',
+            'IMG_2766.jpg',
+            'IMG_2768.jpg',
+            'IMG_2982.jpg'
+        ];
+        
+        // Lista de depoimentos
+        const testimonialImages = [
+            'photo_2026-11-18_23-05-25.jpg',
+            'photo_2026-11-18_23-05-27.jpg'
+        ];
+        
+        let totalImages = 2 + galleryImages.length + testimonialImages.length; // Hero + About + Gallery + Testimonials
+        let okImages = 0;
+        let brokenImages = 0;
+        
+        function updateSummary() {
+            document.getElementById('total-images').textContent = totalImages;
+            document.getElementById('ok-images').textContent = okImages;
+            document.getElementById('broken-images').textContent = brokenImages;
+            const successRate = Math.round((okImages / totalImages) * 100);
+            document.getElementById('success-rate').textContent = successRate + '%';
+        }
+        
+        // Testar Hero
+        const heroTest = document.getElementById('hero-test');
+        const heroImg = new Image();
+        heroImg.src = 'images/IMG_2980-_1_.jpg';
+        heroImg.onload = function() {
+            document.getElementById('hero-status').textContent = '✅ OK';
+            document.getElementById('hero-status').className = 'image-status status-ok';
+            okImages++;
+            updateSummary();
+        };
+        heroImg.onerror = function() {
+            document.getElementById('hero-status').textContent = '❌ Erro';
+            document.getElementById('hero-status').className = 'image-status status-error';
+            heroTest.style.backgroundImage = 'none';
+            heroTest.style.backgroundColor = '#dc3545';
+            brokenImages++;
+            updateSummary();
+        };
+        
+        // Testar About
+        const aboutImg = document.getElementById('about-image');
+        aboutImg.onload = function() {
+            document.getElementById('about-status').textContent = '✅ OK';
+            document.getElementById('about-status').className = 'image-status status-ok';
+            okImages++;
+            updateSummary();
+        };
+        aboutImg.onerror = function() {
+            document.getElementById('about-status').textContent = '❌ Erro';
+            document.getElementById('about-status').className = 'image-status status-error';
+            brokenImages++;
+            updateSummary();
+        };
+        
+        // Testar Galeria
+        const galleryGrid = document.getElementById('gallery-grid');
+        galleryImages.forEach(imageName => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            
+            const img = document.createElement('img');
+            img.src = 'images/' + imageName;
+            img.alt = imageName;
+            
+            const nameP = document.createElement('p');
+            nameP.className = 'image-name';
+            nameP.textContent = imageName;
+            
+            const status = document.createElement('div');
+            status.className = 'image-status';
+            status.textContent = 'Verificando...';
+            
+            img.onload = function() {
+                status.textContent = '✅ OK';
+                status.className = 'image-status status-ok';
+                okImages++;
+                updateSummary();
+            };
+            
+            img.onerror = function() {
+                status.textContent = '❌ Erro';
+                status.className = 'image-status status-error';
+                brokenImages++;
+                updateSummary();
+            };
+            
+            card.appendChild(img);
+            card.appendChild(nameP);
+            card.appendChild(status);
+            galleryGrid.appendChild(card);
+        });
+        
+        // Testar Depoimentos
+        const testimonialsGrid = document.getElementById('testimonials-grid');
+        testimonialImages.forEach(imageName => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            
+            const img = document.createElement('img');
+            img.src = 'images/' + imageName;
+            img.alt = imageName;
+            
+            const nameP = document.createElement('p');
+            nameP.className = 'image-name';
+            nameP.textContent = imageName;
+            
+            const status = document.createElement('div');
+            status.className = 'image-status';
+            status.textContent = 'Verificando...';
+            
+            img.onload = function() {
+                status.textContent = '✅ OK';
+                status.className = 'image-status status-ok';
+                okImages++;
+                updateSummary();
+            };
+            
+            img.onerror = function() {
+                status.textContent = '❌ Erro';
+                status.className = 'image-status status-error';
+                brokenImages++;
+                updateSummary();
+            };
+            
+            card.appendChild(img);
+            card.appendChild(nameP);
+            card.appendChild(status);
+            testimonialsGrid.appendChild(card);
+        });
+        
+        // Atualizar resumo inicial
+        updateSummary();
+    </script>
+</body>
+</html>

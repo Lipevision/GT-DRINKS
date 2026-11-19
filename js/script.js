@@ -471,3 +471,72 @@ document.querySelectorAll('.gallery-item, .service-card, .feature-item').forEach
 
 console.log('%c GT DRINKS ', 'background: #00ff88; color: #000; font-size: 20px; font-weight: bold; padding: 10px;');
 console.log('%c Site Atualizado com Fotografias Reais ', 'background: #000; color: #00ff88; font-size: 14px; padding: 5px;');
+
+
+// ===================================
+// Proteção contra imagens quebradas
+// ===================================
+
+// Função para remover elementos com imagens quebradas
+function handleBrokenImages() {
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    const aboutImage = document.querySelector('.about-photo');
+    
+    // Verificar imagens da galeria
+    galleryImages.forEach(img => {
+        img.addEventListener('error', function() {
+            console.warn('Imagem quebrada removida:', this.src);
+            const galleryItem = this.closest('.gallery-item');
+            if (galleryItem) {
+                galleryItem.style.display = 'none';
+                galleryItem.remove();
+            }
+        });
+        
+        // Verificar se já está quebrada
+        if (!img.complete || img.naturalHeight === 0) {
+            const galleryItem = img.closest('.gallery-item');
+            if (galleryItem) {
+                galleryItem.style.display = 'none';
+                galleryItem.remove();
+            }
+        }
+    });
+    
+    // Verificar imagem do Quem Somos
+    if (aboutImage) {
+        aboutImage.addEventListener('error', function() {
+            console.warn('Imagem do Quem Somos quebrada:', this.src);
+            const aboutImageContainer = this.closest('.about-image');
+            if (aboutImageContainer) {
+                aboutImageContainer.style.display = 'none';
+            }
+        });
+    }
+    
+    // Verificar imagem do Hero (background)
+    const heroImageBg = document.querySelector('.hero-image-bg');
+    if (heroImageBg) {
+        const bgImage = window.getComputedStyle(heroImageBg).backgroundImage;
+        if (bgImage && bgImage !== 'none') {
+            const imageUrl = bgImage.replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
+            const testImg = new Image();
+            testImg.src = imageUrl;
+            testImg.onerror = function() {
+                console.warn('Imagem de fundo do Hero quebrada:', imageUrl);
+                heroImageBg.style.backgroundImage = 'none';
+                heroImageBg.style.backgroundColor = '#000';
+            };
+        }
+    }
+}
+
+// Executar quando o DOM estiver pronto
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', handleBrokenImages);
+} else {
+    handleBrokenImages();
+}
+
+// Verificar novamente após todas as imagens carregarem
+window.addEventListener('load', handleBrokenImages);
