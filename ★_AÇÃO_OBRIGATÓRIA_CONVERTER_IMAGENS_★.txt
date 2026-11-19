@@ -1,0 +1,244 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║     ⚠️ AÇÃO OBRIGATÓRIA: CONVERTER 7 IMAGENS HEIC PARA JPG ⚠️    ║
+║                                                                    ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Data: 18 de novembro de 2026
+Status: ⚠️ URGENTE - Site atualizado mas imagens precisam ser convertidas
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ CORREÇÕES APLICADAS NO HTML
+═══════════════════════════════════════════════════════════════════════
+
+✅ 1. SEÇÃO QUEM SOMOS
+   - Imagem antiga removida (drink-casamento-01.png)
+   - SUBSTITUÍDA POR: IMG_2766.jpg
+   - Descrição: Estrutura de bebidas com 3 drinks (laranja, escuro, azul)
+
+✅ 2. PORTFÓLIO - GALERIA
+   - Galeria expandida de 2 para 10 imagens
+   - TODAS as 10 fotografias solicitadas foram adicionadas:
+     1. drink-casamento-01.png ✅
+     2. fundador-thiago.jpg ✅
+     3. IMG_2764.jpg (conversão necessária)
+     4. IMG_2766.jpg (conversão necessária)
+     5. IMG_2768.jpg (conversão necessária)
+     6. IMG_2770.jpg (conversão necessária)
+     7. IMG_2903.jpg (conversão necessária)
+     8. IMG_2980.jpg (conversão necessária)
+     9. IMG_3015.jpg (conversão necessária)
+     10. servico-bartender-01.png ✅
+
+✅ CSS ATUALIZADO
+   - Grid adaptado para 10 imagens
+   - Layout responsivo (3 colunas → 2 → 1)
+
+═══════════════════════════════════════════════════════════════════════
+  ⚠️ PROBLEMA: IMAGENS HEIC NÃO FUNCIONAM EM NAVEGADORES
+═══════════════════════════════════════════════════════════════════════
+
+7 das 10 imagens estão em formato .HEIC (Apple) que navegadores web
+NÃO SUPORTAM!
+
+ARQUIVOS QUE PRECISAM SER CONVERTIDOS:
+❌ IMG_2764.HEIC → IMG_2764.jpg
+❌ IMG_2766.HEIC → IMG_2766.jpg ⚠️ USADO NA SEÇÃO QUEM SOMOS
+❌ IMG_2768.HEIC → IMG_2768.jpg
+❌ IMG_2770.HEIC → IMG_2770.jpg
+❌ IMG_2903.HEIC → IMG_2903.jpg
+❌ IMG_2980.HEIC → IMG_2980.jpg
+❌ IMG_3015.HEIC → IMG_3015.jpg
+
+IMPORTANTE: Sem a conversão, essas imagens aparecerão como "quebradas"
+no navegador!
+
+═══════════════════════════════════════════════════════════════════════
+  🚀 SOLUÇÃO RÁPIDA (5 MINUTOS)
+═══════════════════════════════════════════════════════════════════════
+
+MÉTODO ONLINE (RECOMENDADO - MAIS RÁPIDO):
+
+1. Abra: https://convertio.co/pt/heic-jpg/
+
+2. Clique em "Escolher arquivos"
+
+3. Vá até a pasta:
+   GT DRINKS\images\
+
+4. Selecione os 7 arquivos .HEIC:
+   - IMG_2764.HEIC
+   - IMG_2766.HEIC
+   - IMG_2768.HEIC
+   - IMG_2770.HEIC
+   - IMG_2903.HEIC
+   - IMG_2980.HEIC
+   - IMG_3015.HEIC
+
+5. Clique em "CONVERTER" (botão vermelho)
+
+6. Aguarde 1-2 minutos
+
+7. Clique em "Baixar" (vai baixar um arquivo .zip)
+
+8. Extraia o arquivo .zip
+
+9. Copie os 7 arquivos .jpg para:
+   GT DRINKS\images\
+
+10. Os nomes devem ficar EXATAMENTE assim:
+    IMG_2764.jpg
+    IMG_2766.jpg
+    IMG_2768.jpg
+    IMG_2770.jpg
+    IMG_2903.jpg
+    IMG_2980.jpg
+    IMG_3015.jpg
+
+11. Abra index.html no navegador
+    Todas as imagens vão aparecer!
+
+═══════════════════════════════════════════════════════════════════════
+  💻 MÉTODO WINDOWS (ALTERNATIVO)
+═══════════════════════════════════════════════════════════════════════
+
+Para cada um dos 7 arquivos .HEIC:
+
+1. Vá até: GT DRINKS\images\
+
+2. Clique com botão DIREITO no arquivo .HEIC
+
+3. Selecione "Abrir com" → "Fotos"
+
+4. Na janela do Fotos, clique nos 3 pontinhos (...)
+
+5. Selecione "Salvar uma cópia"
+
+6. Escolha formato "JPEG"
+
+7. Salve com o nome:
+   IMG_2764.jpg (sem .HEIC)
+
+8. Repita para os 7 arquivos
+
+═══════════════════════════════════════════════════════════════════════
+  🤖 MÉTODO AUTOMATIZADO (SCRIPT)
+═══════════════════════════════════════════════════════════════════════
+
+Na pasta images/ existe um script PowerShell:
+
+📄 CONVERTER_TODAS_IMAGENS_HEIC.ps1
+
+Para executar:
+1. Vá até: GT DRINKS\images\
+2. Clique com botão DIREITO no arquivo .ps1
+3. Selecione "Executar com PowerShell"
+4. Siga as instruções na tela
+
+O script tenta converter automaticamente ou mostra instruções detalhadas.
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ VERIFICAÇÃO APÓS CONVERSÃO
+═══════════════════════════════════════════════════════════════════════
+
+Após converter, você deve ter na pasta images/:
+
+✓ IMG_2764.jpg (novo)
+✓ IMG_2766.jpg (novo - IMPORTANTE!)
+✓ IMG_2768.jpg (novo)
+✓ IMG_2770.jpg (novo)
+✓ IMG_2903.jpg (novo)
+✓ IMG_2980.jpg (novo)
+✓ IMG_3015.jpg (novo)
+
+E manter os arquivos que já funcionam:
+✓ drink-casamento-01.png (já existe)
+✓ fundador-thiago.jpg (já existe)
+✓ servico-bartender-01.png (já existe)
+✓ photo_2026-11-18_23-05-25.jpg (depoimentos)
+✓ photo_2026-11-18_23-05-27.jpg (depoimentos)
+
+═══════════════════════════════════════════════════════════════════════
+  🎯 TESTANDO O SITE APÓS CONVERSÃO
+═══════════════════════════════════════════════════════════════════════
+
+1. Converta as 7 imagens HEIC para JPG
+
+2. Coloque os arquivos .jpg na pasta images/
+
+3. Abra o arquivo: index.html
+
+4. Verifique:
+   ✓ Seção Quem Somos: Deve mostrar estrutura com 3 drinks
+   ✓ Galeria: Deve mostrar 10 fotos sem imagens quebradas
+
+5. Teste no celular (F12 → modo responsivo)
+
+═══════════════════════════════════════════════════════════════════════
+  📊 CHECKLIST DE CONFERÊNCIA
+═══════════════════════════════════════════════════════════════════════
+
+Após converter as imagens, verifique:
+
+□ Quem Somos mostra IMG_2766 (3 drinks coloridos)
+□ Portfólio mostra 10 fotografias
+□ Nenhuma imagem aparece quebrada
+□ Não há duplicação de fotos
+□ Depoimentos mantêm as 2 artes originais
+□ Site funciona no desktop
+□ Site funciona no celular
+□ Todas as imagens carregam corretamente
+
+═══════════════════════════════════════════════════════════════════════
+  ⏰ RESUMO
+═══════════════════════════════════════════════════════════════════════
+
+TEMPO NECESSÁRIO: 5-10 minutos
+
+PASSOS:
+1. Acesse https://convertio.co/pt/heic-jpg/
+2. Selecione os 7 arquivos .HEIC
+3. Converta
+4. Baixe o .zip
+5. Extraia
+6. Copie os .jpg para images/
+7. Abra index.html
+8. Pronto! 🎉
+
+═══════════════════════════════════════════════════════════════════════
+  💡 POR QUE ISSO É NECESSÁRIO
+═══════════════════════════════════════════════════════════════════════
+
+• HEIC é formato exclusivo da Apple
+• Navegadores web (Chrome, Firefox, Edge, Safari) NÃO suportam HEIC
+• Sem conversão, as imagens NÃO aparecem no site
+• JPG funciona em TODOS os navegadores
+• Qualidade permanece excelente após conversão
+• É uma ação única - depois funciona para sempre
+
+═══════════════════════════════════════════════════════════════════════
+  🔗 LINKS ÚTEIS
+═══════════════════════════════════════════════════════════════════════
+
+Conversor Principal: https://convertio.co/pt/heic-jpg/
+Alternativa 1: https://cloudconvert.com/heic-to-jpg
+Alternativa 2: https://heictojpeg.com/
+Alternativa 3: https://www.freeconvert.com/heic-to-jpg
+
+═══════════════════════════════════════════════════════════════════════
+
+✅ O CÓDIGO ESTÁ PRONTO!
+⚠️ FALTA APENAS CONVERTER AS IMAGENS!
+
+Após a conversão, o site funcionará 100% conforme solicitado:
+• Quem Somos com IMG_2766
+• Portfólio com 10 fotografias
+• Nenhuma imagem quebrada
+
+═══════════════════════════════════════════════════════════════════════
+
+Desenvolvido por: Kiro AI
+Data: 18 de novembro de 2026
+Versão: 7.0 - Correção Final Obrigatória
+
+═══════════════════════════════════════════════════════════════════════

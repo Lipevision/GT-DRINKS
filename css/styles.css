@@ -1525,13 +1525,11 @@ section {
     margin: 0;
 }
 
-/* Gallery - Ajuste para 2 imagens */
+/* Gallery - Ajuste para 10 imagens */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .gallery-item {
