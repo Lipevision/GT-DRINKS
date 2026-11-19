@@ -1,0 +1,168 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║          ⚠️ AÇÃO URGENTE: CONVERTER IMAGENS HEIC PARA JPG ⚠️      ║
+║                                                                    ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Data: 18 de novembro de 2026
+Status: ⚠️ CRÍTICO - Site funcionando com imagens limitadas
+
+═══════════════════════════════════════════════════════════════════════
+  ❌ PROBLEMA IDENTIFICADO
+═══════════════════════════════════════════════════════════════════════
+
+As 7 imagens principais solicitadas para o portfólio estão no formato
+.HEIC (Apple) que NÃO É SUPORTADO por navegadores web!
+
+Por isso o site está usando apenas 2 imagens PNG disponíveis.
+
+IMAGENS QUE PRECISAM SER CONVERTIDAS:
+❌ IMG_2764.HEIC → Para usar no Hero ou Galeria
+❌ IMG_2766.HEIC → Para usar na seção Sobre ou Galeria
+❌ IMG_2768.HEIC → Para Galeria
+❌ IMG_2770.HEIC → Para Galeria
+❌ IMG_2903.HEIC → Para seção Sobre ou Galeria  
+❌ IMG_2980.HEIC → Para Galeria
+❌ IMG_3015.HEIC → Para Galeria
+
+═══════════════════════════════════════════════════════════════════════
+  🚀 SOLUÇÃO RÁPIDA (5 MINUTOS)
+═══════════════════════════════════════════════════════════════════════
+
+MÉTODO ONLINE (MAIS RÁPIDO E FÁCIL):
+
+1. Acesse: https://convertio.co/pt/heic-jpg/
+
+2. Clique em "Escolher arquivos"
+
+3. Selecione os 7 arquivos .HEIC da pasta images/
+
+4. Clique em "CONVERTER" (botão vermelho)
+
+5. Aguarde 1-2 minutos
+
+6. Clique em "Baixar" (vai baixar um arquivo .zip)
+
+7. Extraia o .zip
+
+8. Copie os 7 arquivos .jpg para: 
+   GT DRINKS\images\
+
+9. Os nomes devem ficar assim:
+   IMG_2764.jpg
+   IMG_2766.jpg
+   IMG_2768.jpg
+   IMG_2770.jpg
+   IMG_2903.jpg
+   IMG_2980.jpg
+   IMG_3015.jpg
+
+10. Abra index.html e as imagens vão aparecer!
+
+═══════════════════════════════════════════════════════════════════════
+  💻 MÉTODO WINDOWS (ALTERNATIVO)
+═══════════════════════════════════════════════════════════════════════
+
+Para cada arquivo .HEIC:
+
+1. Clique com botão DIREITO no arquivo
+2. Selecione "Abrir com" → "Fotos"
+3. Clique nos 3 pontinhos (...) no canto superior
+4. Selecione "Salvar uma cópia"
+5. Escolha formato "JPEG"
+6. Salve com o nome IMG_2764.jpg (sem .HEIC)
+7. Repita para os 7 arquivos
+
+═══════════════════════════════════════════════════════════════════════
+  📊 STATUS ATUAL DO SITE
+═══════════════════════════════════════════════════════════════════════
+
+✅ FUNCIONANDO AGORA COM IMAGENS LIMITADAS:
+
+Hero: servico-bartender-01.png (drinks coloridos) ✅
+Sobre: drink-casamento-01.png ✅
+Fundador: fundador-thiago.jpg ✅
+Galeria: 2 imagens PNG ✅
+Depoimento Vanessa: photo_2026-11-18_23-05-25.jpg ✅
+Depoimento Amanda: photo_2026-11-18_23-05-27.jpg ✅
+
+⚠️ PARA EXPANDIR A GALERIA:
+Converta os 7 arquivos HEIC para JPG
+
+═══════════════════════════════════════════════════════════════════════
+  🎯 APÓS CONVERTER AS IMAGENS
+═══════════════════════════════════════════════════════════════════════
+
+1. Coloque os arquivos .jpg na pasta images/
+
+2. Abra index.html
+
+3. Vá até a seção <div class="gallery-grid">
+
+4. Adicione novos cards de galeria:
+
+<div class="gallery-item">
+    <img src="images/IMG_2764.jpg" alt="Descrição" class="gallery-image">
+    <div class="gallery-overlay">
+        <i class="fas fa-search-plus"></i>
+    </div>
+</div>
+
+5. Repita para cada imagem convertida
+
+6. Salve e abra no navegador
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ VERIFICAÇÃO
+═══════════════════════════════════════════════════════════════════════
+
+Após converter, você deve ter na pasta images/:
+
+✓ IMG_2764.jpg
+✓ IMG_2766.jpg
+✓ IMG_2768.jpg
+✓ IMG_2770.jpg
+✓ IMG_2903.jpg
+✓ IMG_2980.jpg
+✓ IMG_3015.jpg
+
+E manter os arquivos que já funcionam:
+
+✓ servico-bartender-01.png
+✓ drink-casamento-01.png
+✓ fundador-thiago.jpg
+✓ photo_2026-11-18_23-05-25.jpg
+✓ photo_2026-11-18_23-05-27.jpg
+
+═══════════════════════════════════════════════════════════════════════
+  💡 POR QUE ISSO É IMPORTANTE
+═══════════════════════════════════════════════════════════════════════
+
+• HEIC é um formato da Apple
+• Chrome, Firefox, Edge, Safari NÃO suportam HEIC
+• As imagens simplesmente não aparecem nos navegadores
+• JPG funciona em TODOS os navegadores
+• A conversão leva apenas 5 minutos
+• Qualidade permanece excelente
+
+═══════════════════════════════════════════════════════════════════════
+  🔗 LINKS ÚTEIS
+═══════════════════════════════════════════════════════════════════════
+
+Conversor Online: https://convertio.co/pt/heic-jpg/
+Alternativa 1: https://cloudconvert.com/heic-to-jpg
+Alternativa 2: https://heictojpeg.com/
+
+═══════════════════════════════════════════════════════════════════════
+
+⏱️ TEMPO ESTIMADO: 5 minutos
+
+O site já está funcionando, mas com galeria limitada.
+Converta as imagens HEIC para expandir o portfólio!
+
+═══════════════════════════════════════════════════════════════════════
+
+Desenvolvido por: Kiro AI
+Data: 18 de novembro de 2026
+
+═══════════════════════════════════════════════════════════════════════
