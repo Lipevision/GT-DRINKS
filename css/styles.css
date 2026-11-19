@@ -285,7 +285,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.8) 100%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
     z-index: 1;
 }
 
@@ -968,8 +968,10 @@ section {
         grid-template-columns: 1fr 1fr;
     }
     
+    /* Depoimentos continuam em 2 colunas em tablets */
     .depoimentos-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
 
@@ -1463,9 +1465,12 @@ section {
 
 .depoimentos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
     margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .depoimento-card {
@@ -1485,7 +1490,7 @@ section {
 
 .depoimento-image {
     width: 100%;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -1493,12 +1498,13 @@ section {
 .testimonial-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: var(--color-white);
     transition: var(--transition);
 }
 
 .depoimento-card:hover .testimonial-photo {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .depoimento-info {
@@ -1622,13 +1628,14 @@ section {
     }
     
     /* Depoimentos em mobile */
+    /* Depoimentos em 1 coluna no mobile */
     .depoimentos-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
     
     .depoimento-image {
-        height: 300px;
+        height: 350px;
     }
     
     /* Menu mobile mais acessível */
