@@ -1,0 +1,595 @@
+/* ===================================
+   GT DRINKS - CORREÇÕES RESPONSIVAS
+   Ajustes finais para mobile, tablet e desktop
+   =================================== */
+
+/* ============================================
+   HERO - IMAGEM COMPLETA EM MOBILE
+   ============================================ */
+
+/* Desktop: usar background-size cover */
+@media (min-width: 769px) {
+    .hero {
+        height: 100vh;
+        min-height: 600px;
+    }
+    
+    .hero-image-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* MOBILE: usar contain para mostrar imagem INTEIRA */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 60px 0;
+    }
+    
+    .hero-image-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        opacity: 0.4; /* Reduzir opacidade para manter textos legíveis */
+    }
+    
+    .hero-overlay {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.85) 100%);
+    }
+    
+    .hero-content {
+        padding: 20px 0;
+    }
+    
+    /* Títulos compactos em mobile */
+    .hero-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle-inline {
+        font-size: 1.3rem !important;
+        display: block;
+        margin-top: 8px;
+    }
+    
+    .hero-description {
+        font-size: 1rem !important;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    
+    /* Botões em coluna no mobile */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ============================================
+   HEADER - COMPACTO EM MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .logo h1 .neon {
+        font-size: 1.5rem !important;
+    }
+    
+    #header.scrolled {
+        padding: 5px 0;
+    }
+    
+    .mobile-menu-toggle {
+        width: 30px;
+        height: 25px;
+    }
+    
+    .mobile-menu-toggle span {
+        height: 2px;
+    }
+    
+    .nav-menu {
+        padding-top: 80px;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   SEÇÕES - ESPAÇAMENTO COMPACTO
+   ============================================ */
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 0 !important;
+    }
+    
+    .section-header {
+        margin-bottom: 35px;
+    }
+    
+    .section-tag {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 12px;
+    }
+    
+    .section-description {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* ============================================
+   QUEM SOMOS - LAYOUT RESPONSIVO
+   ============================================ */
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+    
+    .about-image {
+        order: 1;
+        max-width: 100%;
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+    
+    .about-text .lead {
+        font-size: 1.05rem;
+        margin-bottom: 15px;
+    }
+    
+    .about-photo {
+        max-height: 350px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+/* ============================================
+   FUNDADOR - COMPACTO
+   ============================================ */
+
+@media (max-width: 768px) {
+    .founder-content {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .founder-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .founder-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .founder-text {
+        text-align: center;
+    }
+    
+    .founder-name {
+        font-size: 1.6rem !important;
+    }
+    
+    .founder-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* ============================================
+   SERVIÇOS - GRID RESPONSIVO
+   ============================================ */
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* ============================================
+   GALERIA - OTIMIZADA PARA MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+    
+    .gallery-item {
+        height: 160px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    
+    .gallery-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .gallery-overlay {
+        opacity: 0;
+    }
+    
+    .gallery-item:active .gallery-overlay {
+        opacity: 1;
+    }
+}
+
+/* 1 coluna para telas muito pequenas */
+@media (max-width: 400px) {
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .gallery-item {
+        height: 220px;
+    }
+}
+
+/* ============================================
+   DEPOIMENTOS - RESPONSIVO
+   ============================================ */
+
+@media (max-width: 768px) {
+    .depoimentos-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .depoimento-card {
+        padding: 20px;
+    }
+    
+    .depoimento-image {
+        height: 300px;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .depoimento-author {
+        font-size: 1.2rem;
+    }
+    
+    .depoimento-role {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   INSTAGRAM SECTION
+   ============================================ */
+
+@media (max-width: 768px) {
+    .instagram-content {
+        padding: 40px 20px;
+    }
+    
+    .instagram-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .instagram-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .instagram-description {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    
+    .btn-instagram {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   DIFERENCIAIS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .feature-item {
+        padding: 25px 20px;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+    }
+    
+    .feature-item h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .feature-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   ORÇAMENTO
+   ============================================ */
+
+@media (max-width: 768px) {
+    .quote-content {
+        padding: 40px 20px;
+    }
+    
+    .contact-methods {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-item-large {
+        padding: 15px;
+    }
+    
+    .contact-item-large i {
+        font-size: 2rem;
+    }
+    
+    .contact-item-large h4 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-item-large p {
+        font-size: 1rem;
+    }
+    
+    .btn-large {
+        padding: 16px 25px;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-col h3,
+    .footer-col h4 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .footer-col p,
+    .footer-col li {
+        font-size: 0.9rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        padding: 20px 0;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================
+   BOTÃO FLUTUANTE WHATSAPP
+   ============================================ */
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 15px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+}
+
+/* ============================================
+   TABLET - 769px a 1024px
+   ============================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ============================================
+   DESKTOP GRANDE - 1440px+
+   ============================================ */
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1300px;
+    }
+    
+    .hero-title {
+        font-size: 5.5rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .gallery-item {
+        height: 380px;
+    }
+}
+
+/* ============================================
+   OTIMIZAÇÕES GERAIS
+   ============================================ */
+
+/* Prevenir rolagem horizontal em todos os dispositivos */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Melhorar performance de scroll em mobile */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Otimizar imagens para diferentes densidades */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-image-bg {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Acessibilidade touch - áreas clicáveis maiores */
+@media (max-width: 768px) {
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Animações suaves em todos os dispositivos */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

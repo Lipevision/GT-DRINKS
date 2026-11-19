@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Responsivo - GT DRINKS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #00ff88;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .test-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .device-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .device-simulator {
+            background: #2a2a2a;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .device-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #00ff88;
+        }
+        
+        .device-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00ff88;
+        }
+        
+        .device-size {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        .device-frame {
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .device-screen {
+            width: 100%;
+            border: none;
+            display: block;
+        }
+        
+        .instructions {
+            background: #2a2a2a;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h2 {
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+        
+        .instructions ul {
+            margin-left: 20px;
+            line-height: 2;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        
+        .check-icon {
+            color: #00ff88;
+            margin-right: 10px;
+        }
+        
+        .btn-open-site {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background: #00ff88;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .btn-open-site:hover {
+            background: #00cc6e;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.5);
+        }
+        
+        .checklist {
+            background: #2a2a2a;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        
+        .checklist h2 {
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+        
+        .checklist-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            border-left: 4px solid #00ff88;
+        }
+        
+        .checklist-category {
+            font-weight: bold;
+            color: #00ff88;
+            margin-bottom: 8px;
+        }
+        
+        .checklist-item ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        .checklist-item li {
+            margin: 5px 0;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 TESTE RESPONSIVO - GT DRINKS</h1>
+        
+        <div class="instructions">
+            <h2>📋 Instruções de Teste</h2>
+            <ul>
+                <li><span class="check-icon">✓</span> Abra o site em cada dispositivo simulado abaixo</li>
+                <li><span class="check-icon">✓</span> Verifique se a imagem do Hero aparece COMPLETA no mobile</li>
+                <li><span class="check-icon">✓</span> Confirme que não há cortes nas laterais ou topo</li>
+                <li><span class="check-icon">✓</span> Teste a rolagem e navegação em cada tamanho</li>
+                <li><span class="check-icon">✓</span> Verifique se todos os textos são legíveis</li>
+                <li><span class="check-icon">✓</span> Confirme que botões são facilmente clicáveis</li>
+            </ul>
+            
+            <a href="index.html" target="_blank" class="btn-open-site">
+                🚀 ABRIR SITE EM NOVA ABA
+            </a>
+        </div>
+        
+        <div class="device-grid">
+            <div class="device-simulator">
+                <div class="device-header">
+                    <div class="device-name">📱 iPhone SE</div>
+                    <div class="device-size">375 x 667px</div>
+                </div>
+                <div class="device-frame">
+                    <iframe src="index.html" class="device-screen" style="height: 667px;"></iframe>
+                </div>
+            </div>
+            
+            <div class="device-simulator">
+                <div class="device-header">
+                    <div class="device-name">📱 iPhone 12 Pro</div>
+                    <div class="device-size">390 x 844px</div>
+                </div>
+                <div class="device-frame">
+                    <iframe src="index.html" class="device-screen" style="height: 844px;"></iframe>
+                </div>
+            </div>
+            
+            <div class="device-simulator">
+                <div class="device-header">
+                    <div class="device-name">📱 Samsung Galaxy S21</div>
+                    <div class="device-size">360 x 800px</div>
+                </div>
+                <div class="device-frame">
+                    <iframe src="index.html" class="device-screen" style="height: 800px;"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="checklist">
+            <h2>✅ CHECKLIST DE VERIFICAÇÃO</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-category">📱 MOBILE (até 768px)</div>
+                <ul>
+                    <li>[ ] Imagem do Hero aparece COMPLETA (sem cortes)</li>
+                    <li>[ ] Textos do Hero são legíveis</li>
+                    <li>[ ] Botões cabem na tela e são facilmente clicáveis</li>
+                    <li>[ ] Logo GT DRINKS está em tamanho adequado</li>
+                    <li>[ ] Seções têm espaçamento confortável</li>
+                    <li>[ ] Galeria mostra 2 colunas ou 1 coluna</li>
+                    <li>[ ] Todas as imagens carregam corretamente</li>
+                    <li>[ ] Menu mobile funciona perfeitamente</li>
+                    <li>[ ] Botão WhatsApp flutuante não cobre conteúdo</li>
+                    <li>[ ] Não há rolagem horizontal</li>
+                </ul>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checklist-category">💻 TABLET (769px a 1024px)</div>
+                <ul>
+                    <li>[ ] Layout se adapta corretamente</li>
+                    <li>[ ] Galeria mostra 3 colunas</li>
+                    <li>[ ] Serviços mostram 2 colunas</li>
+                    <li>[ ] Imagens bem dimensionadas</li>
+                    <li>[ ] Textos proporcionais</li>
+                </ul>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checklist-category">🖥️ DESKTOP (1025px+)</div>
+                <ul>
+                    <li>[ ] Hero ocupa tela inteira com imagem de fundo</li>
+                    <li>[ ] Layout aproveita bem a largura</li>
+                    <li>[ ] Galeria mostra 3-4 colunas</li>
+                    <li>[ ] Serviços mostram 3 colunas</li>
+                    <li>[ ] Conteúdo centralizado (max-width 1200px)</li>
+                    <li>[ ] Imagens em alta qualidade</li>
+                </ul>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checklist-category">🎨 VISUAL GERAL</div>
+                <ul>
+                    <li>[ ] Cores GT DRINKS preservadas (preto, branco, verde)</li>
+                    <li>[ ] Identidade visual mantida</li>
+                    <li>[ ] Todas as seções funcionando</li>
+                    <li>[ ] Links do WhatsApp funcionando</li>
+                    <li>[ ] Links sociais funcionando</li>
+                    <li>[ ] Navegação suave entre seções</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; padding: 30px; background: #2a2a2a; border-radius: 15px;">
+            <h2 style="color: #00ff88; margin-bottom: 15px;">🚀 PRÓXIMOS PASSOS</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                Após verificar todos os itens acima:
+            </p>
+            <ol style="text-align: left; max-width: 600px; margin: 0 auto; line-height: 2;">
+                <li>Abra o site em dispositivos reais (celular, tablet, computador)</li>
+                <li>Teste a navegação completa</li>
+                <li>Verifique todas as imagens</li>
+                <li>Confirme que não há erros no console (F12)</li>
+                <li>Teste os botões do WhatsApp</li>
+            </ol>
+        </div>
+    </div>
+    
+    <script>
+        // Atualizar altura dos iframes conforme necessário
+        window.addEventListener('load', function() {
+            const iframes = document.querySelectorAll('.device-screen');
+            iframes.forEach(iframe => {
+                iframe.style.width = iframe.parentElement.offsetWidth + 'px';
+            });
+        });
+        
+        // Redimensionar em mudanças de janela
+        window.addEventListener('resize', function() {
+            const iframes = document.querySelectorAll('.device-screen');
+            iframes.forEach(iframe => {
+                iframe.style.width = iframe.parentElement.offsetWidth + 'px';
+            });
+        });
+    </script>
+</body>
+</html>
