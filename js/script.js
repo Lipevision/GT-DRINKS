@@ -119,15 +119,16 @@ if (aboutSection) {
 }
 
 // ===================================
-// Gallery Filter
+// Gallery Filter - REMOVIDO
 // ===================================
 
+// Código comentado - filtros removidos para galeria simplificada
+/*
 const filterButtons = document.querySelectorAll('.filter-btn');
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remover active de todos os botões
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
         
@@ -159,11 +160,14 @@ filterButtons.forEach(button => {
         });
     });
 });
+*/
 
 // ===================================
-// Menu Tabs (Carta de Drinks)
+// Menu Tabs (Carta de Drinks) - REMOVIDO
 // ===================================
 
+// Código comentado - seção removida do site
+/*
 const menuTabs = document.querySelectorAll('.menu-tab');
 const menuTabContents = document.querySelectorAll('.menu-tab-content');
 
@@ -180,6 +184,7 @@ menuTabs.forEach(tab => {
         document.getElementById(targetTab).classList.add('active');
     });
 });
+*/
 
 // ===================================
 // Form Validation e Submissão
@@ -398,3 +403,71 @@ window.addEventListener('scroll', debouncedScroll);
 
 console.log('%c GT DRINKS ', 'background: #00ff88; color: #000; font-size: 20px; font-weight: bold; padding: 10px;');
 console.log('%c Bartender & Coquetelaria Premium ', 'background: #000; color: #00ff88; font-size: 14px; padding: 5px;');
+
+
+// ===================================
+// Gallery Lightbox (Simple)
+// ===================================
+
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const img = item.querySelector('.gallery-image');
+        if (img) {
+            // Simple alert - can be replaced with a proper lightbox library
+            window.open(img.src, '_blank');
+        }
+    });
+});
+
+// ===================================
+// WhatsApp Integration Update
+// ===================================
+
+// Update all WhatsApp links to use correct number
+const whatsappNumber = '5571993161565';
+const whatsappMessage = encodeURIComponent('Olá, tudo bem? Gostaria de mais informações sobre os serviços da GT Drinks');
+
+// Update WhatsApp float button (already updated in HTML)
+
+// Update form submission to redirect to WhatsApp (if form still exists)
+const quoteForm = document.getElementById('quoteForm');
+if (quoteForm) {
+    quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Redirect to WhatsApp
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+        window.open(whatsappUrl, '_blank');
+    });
+}
+
+// ===================================
+// Smooth Animations on Scroll
+// ===================================
+
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const fadeInObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Apply to gallery items and other elements
+document.querySelectorAll('.gallery-item, .service-card, .feature-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    fadeInObserver.observe(el);
+});
+
+console.log('%c GT DRINKS ', 'background: #00ff88; color: #000; font-size: 20px; font-weight: bold; padding: 10px;');
+console.log('%c Site Atualizado com Fotografias Reais ', 'background: #000; color: #00ff88; font-size: 14px; padding: 5px;');

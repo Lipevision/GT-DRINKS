@@ -1089,3 +1089,235 @@ section {
         display: none;
     }
 }
+
+
+/* ===================================
+   Atualizações GT DRINKS
+   =================================== */
+
+/* Hero com Imagem de Fundo */
+.hero-image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.hero-subtitle-inline {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--color-neon);
+    margin-top: 10px;
+}
+
+/* Founder Section Updates */
+.founder-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.founder-name {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-neon);
+}
+
+.founder-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+}
+
+/* Gallery Updates */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 136, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.gallery-overlay i {
+    font-size: 3rem;
+    color: var(--color-black);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+/* Instagram Section */
+.instagram-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.instagram-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.instagram-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-icon i {
+    font-size: 3.5rem;
+    color: var(--color-white);
+}
+
+.instagram-title {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.instagram-description {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    margin-bottom: 30px;
+}
+
+.btn-instagram {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: var(--color-white);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(240, 148, 51, 0.4);
+}
+
+.btn-instagram i {
+    margin-right: 10px;
+}
+
+/* Quote Section Updates */
+.quote-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-content.centered {
+    text-align: center;
+}
+
+.quote-description {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+}
+
+.contact-item-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--color-gray-medium);
+    border-radius: 8px;
+    margin: 0 15px 30px;
+    min-width: 280px;
+}
+
+.contact-item-large i {
+    font-size: 2.5rem;
+    color: var(--color-neon);
+}
+
+.contact-item-large h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--color-white);
+}
+
+.contact-item-large p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-neon);
+    margin: 0;
+}
+
+.btn-large {
+    padding: 20px 50px;
+    font-size: 1.1rem;
+}
+
+/* Responsive Updates */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle-inline {
+        font-size: 1.8rem;
+    }
+    
+    .founder-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .founder-image {
+        height: 400px;
+    }
+    
+    .contact-item-large {
+        display: flex;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    
+    .instagram-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .instagram-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .instagram-title {
+        font-size: 2rem;
+    }
+}
