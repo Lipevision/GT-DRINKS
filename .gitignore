@@ -1,0 +1,40 @@
+# Arquivos do Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# Node modules (caso adicione npm futuramente)
+node_modules/
+package-lock.json
+
+# Arquivos de build (caso adicione ferramentas de build)
+dist/
+build/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.production
+
+# Backups
+*.bak
+backup/
